@@ -136,16 +136,27 @@ function Contact() {
                       target="_blank"
                       rel="noreferrer"
                       className="
-                        rounded-full
-                        border
-                        border-primary/30
-                        px-5
-                        py-2.5
-                        transition
-                        hover:bg-primary
-                        hover:text-black
-                      "
+                      inline-flex
+                      items-center
+                      gap-2
+                      rounded-full
+                      border
+                      border-primary/30
+                      px-5
+                      py-2.5
+                      transition
+                      hover:bg-primary
+                      hover:text-black
+                    "
                     >
+                      <i
+                        className={
+                          social.label === "GitHub"
+                            ? "bi bi-github"
+                            : "bi bi-linkedin"
+                        }
+                      ></i>
+
                       {social.label}
                     </a>
                   ))}

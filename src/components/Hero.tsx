@@ -1,4 +1,4 @@
-import { hero } from "../data/portfolio";
+import { hero, socials } from "../data/portfolio";
 
 function Hero() {
   return (
@@ -192,7 +192,7 @@ function Hero() {
               mt-6
             "
             >
-              {hero.socials.map((social) => (
+              {socials.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}

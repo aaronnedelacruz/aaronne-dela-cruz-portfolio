@@ -21,25 +21,25 @@ export const hero = {
     text: "View My Work",
     href: "#projects",
   },
-
-  socials: [
-    {
-      name: "Email",
-      icon: "bi bi-envelope-fill",
-      href: "mailto:aaronnechristiandelacruz@gmail.com",
-    },
-    {
-      name: "GitHub",
-      icon: "bi bi-github",
-      href: "https://github.com/aaronnedelacruz",
-    },
-    {
-      name: "LinkedIn",
-      icon: "bi bi-linkedin",
-      href: "https://linkedin.com/in/aaronne-christian-dela-cruz/",
-    },
-  ],
 };
+
+export const socials = [
+  {
+    name: "Email",
+    icon: "bi bi-envelope-fill",
+    href: "mailto:aaronnechristiandelacruz@gmail.com",
+  },
+  {
+    name: "GitHub",
+    icon: "bi bi-github",
+    href: "https://github.com/aaronnedelacruz",
+  },
+  {
+    name: "LinkedIn",
+    icon: "bi bi-linkedin",
+    href: "https://linkedin.com/in/aaronne-christian-dela-cruz/",
+  },
+];
 
 export const about = {
   title: "About Me",
@@ -230,6 +230,7 @@ export const projects = {
     },
   ],
 };
+
 export const skills = {
   title: "Skills",
 
@@ -238,25 +239,39 @@ export const skills = {
 
   categories: [
     {
-      title: "Frontend Languages",
+      title: "Frontend",
       items: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "TypeScript",
         "React.js",
-        "Tailwind CSS 4",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Bootstrap",
       ],
     },
 
     {
-      title: "Backend Development",
-      items: ["PHP", "Laravel", "Java", "Python", "Kotlin", "Bash Script"],
+      title: "Backend",
+      items: [
+        "PHP",
+        "Laravel",
+        "Java",
+        "Python",
+        "Kotlin",
+        "Bash Script",
+      ],
     },
 
     {
       title: "Database",
-      items: ["MySQL", "Firebase Firestore", "MongoDB", "IBM Db2 Cloud"],
+      items: [
+        "MySQL",
+        "SQL",
+        "MongoDB",
+        "Firebase Firestore",
+        "IBM Db2 Cloud",
+      ],
     },
 
     {
@@ -265,11 +280,11 @@ export const skills = {
         "Git",
         "GitHub",
         "Visual Studio Code",
+        "XAMPP",
+        "Vite",
+        "GitHub Pages",
         "Android Studio",
         "IntelliJ IDEA",
-        "Postman",
-        "Docker",
-        "XAMPP",
         "Figma",
       ],
     },
