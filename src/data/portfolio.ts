@@ -113,14 +113,14 @@ export const projects = {
       category: "Capstone Project • Full-stack Developer • Jan 2025 – Dec 2025",
 
       description:
-        "A mobile learning application that uses Gemini AI to generate personalized flashcards and quizzes while enabling collaborative study through real-time chat rooms and cloud-based synchronization.",
+        "An Android-based learning platform designed to improve digital studying through AI-assisted content creation, collaborative learning spaces, and intelligent study management. StudySync enables users to create, organize, and share learning materials while supporting flexible study methods for better knowledge retention and academic collaboration.",
 
       features: [
-        "AI-generated flashcards and practice quizzes using Gemini AI.",
-        "Real-time chat rooms for collaborative learning.",
-        "Secure user authentication and cloud synchronization with Firebase.",
-        "Interactive quiz modes for self-assessment.",
-        "Native Android application with persistent user data.",
+        "Generates study materials from uploaded text, PDFs, and images.",
+        "Real-time chat rooms for collaborative resource sharing.",
+        "Interactive live quizzes within group study sessions.",
+        "Spaced repetition and reminders for effective studying.",
+        "Offline access and PDF export for study sets.",
       ],
 
       stack: ["Android Studio", "Java", "Kotlin", "Firebase", "Gemini AI"],
@@ -253,25 +253,12 @@ export const skills = {
 
     {
       title: "Backend",
-      items: [
-        "PHP",
-        "Laravel",
-        "Java",
-        "Python",
-        "Kotlin",
-        "Bash Script",
-      ],
+      items: ["PHP", "Laravel", "Java", "Python", "Kotlin", "Bash Script"],
     },
 
     {
       title: "Database",
-      items: [
-        "MySQL",
-        "SQL",
-        "MongoDB",
-        "Firebase Firestore",
-        "IBM Db2 Cloud",
-      ],
+      items: ["MySQL", "SQL", "MongoDB", "Firebase Firestore", "IBM Db2 Cloud"],
     },
 
     {

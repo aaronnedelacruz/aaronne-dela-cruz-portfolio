@@ -187,13 +187,13 @@ function Projects() {
                     <span
                       key={i}
                       className="
-                        rounded-full
-                        border
-                        border-primary/25
-                        px-4
-                        py-2
-                        text-sm
-                      "
+                      rounded-lg
+                      bg-white/5
+                      px-3
+                      py-1.5
+                      text-sm
+                      text-muted
+                    "
                     >
                       {tech}
                     </span>
@@ -202,7 +202,16 @@ function Projects() {
 
                 {/* Actions — clicks here shouldn't also open the modal */}
                 <div
-                  className="mt-8 flex flex-wrap items-center gap-4"
+                  className="
+                    mt-8
+                    pt-6
+                    border-t
+                    border-white/10
+                    flex
+                    flex-wrap
+                    items-center
+                    gap-4
+                  "
                   onClick={(e) => e.stopPropagation()}
                 >
                   <a
@@ -210,47 +219,68 @@ function Projects() {
                     target="_blank"
                     rel="noreferrer"
                     className="
-                      rounded-full
-                      border
-                      border-primary
-                      px-6
-                      py-3
-                      transition
-                      hover:bg-primary
-                      hover:text-black
-                    "
+                    inline-flex
+                    items-center
+                    gap-1.5
+                    rounded-full
+                    border
+                    border-primary
+                    px-4
+                    py-2.5
+                    text-sm
+                    font-medium
+                    transition
+                    hover:bg-primary
+                    hover:text-black
+                  "
                   >
+                    <i className="bi bi-github"></i>
                     {projects.labels.repository}
                   </a>
 
                   <a
                     href={project.demo}
                     className="
-                      rounded-full
-                      border
-                      border-white/15
-                      px-6
-                      py-3
-                      transition
-                      hover:border-primary/50
-                    "
+                    inline-flex
+                    items-center
+                    gap-1.5
+                    rounded-full
+                    border
+                    border-white/15
+                    px-4
+                    py-2.5
+                    text-sm
+                    font-medium
+                    transition
+                    hover:border-primary/50
+                  "
                   >
+                    <i className="bi bi-box-arrow-up-right"></i>
                     {projects.labels.demo}
                   </a>
 
-                  <span
+                  <button
+                    type="button"
+                    onClick={() => setActiveProject(project)}
                     className="
-                      rounded-full
-                      bg-primary
-                      text-black
-                      px-6
-                      py-3
-                      font-semibold
-                      ml-auto
-                    "
+                    inline-flex
+                    items-center
+                    gap-1.5
+                    rounded-full
+                    bg-primary
+                    text-black
+                    px-4
+                    py-2.5
+                    text-sm
+                    font-semibold
+                    transition
+                    hover:scale-105
+                    ml-auto
+                  "
                   >
                     {projects.labels.viewDetails}
-                  </span>
+                    <i className="bi bi-arrow-right"></i>
+                  </button>
                 </div>
               </div>
             </article>
@@ -401,13 +431,13 @@ function Projects() {
                         <span
                           key={i}
                           className="
-                              rounded-full
-                              border
-                              border-primary/25
-                              px-3
-                              py-1.5
-                              text-sm
-                            "
+                          rounded-lg
+                          bg-white/5
+                          px-3
+                          py-1.5
+                          text-sm
+                          text-muted
+                        "
                         >
                           {tech}
                         </span>
@@ -420,34 +450,49 @@ function Projects() {
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href={activeProject.details.links.repository}
+                href={activeProject.repository}
                 target="_blank"
                 rel="noreferrer"
                 className="
-                  rounded-full
-                  border
-                  border-primary
-                  px-6
-                  py-3
-                  transition
-                  hover:bg-primary
-                  hover:text-black
-                "
+                inline-flex
+                items-center
+                gap-1.5
+                rounded-full
+                border
+                border-primary
+                px-4
+                py-2.5
+                text-sm
+                font-medium
+                transition
+                hover:bg-primary
+                hover:text-black
+              "
               >
+                <i className="bi bi-github"></i>
                 {projects.labels.repository}
               </a>
 
               <a
-                href={activeProject.details.links.demo}
+                href={activeProject.demo}
+                target="_blank"
+                rel="noreferrer"
                 className="
-                  rounded-full
-                  bg-primary
-                  text-black
-                  px-6
-                  py-3
-                  font-semibold
-                "
+                inline-flex
+                items-center
+                gap-1.5
+                rounded-full
+                border
+                border-white/15
+                px-4
+                py-2.5
+                text-sm
+                font-medium
+                transition
+                hover:border-primary/50
+              "
               >
+                <i className="bi bi-box-arrow-up-right"></i>
                 {projects.labels.demo}
               </a>
             </div>
