@@ -32,7 +32,11 @@ function Navbar() {
             font-bold
           "
         >
-          ACDC
+          <img
+            src="/horizontal-logo.png"
+            alt="Aaronne Dela Cruz Logo"
+            className="h-10 w-auto"
+          />
         </div>
 
         {/* Desktop Menu */}
