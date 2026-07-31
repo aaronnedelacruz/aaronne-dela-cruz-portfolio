@@ -133,12 +133,14 @@ function Hero() {
           >
             <h1
               className="
-                text-white
-                text-[clamp(1.5rem,4vw,5rem)]
-                font-medium
-                leading-[1.1]
-                tracking-tight
-              "
+              text-white
+              text-[clamp(2.25rem,7vw,3.5rem)]
+              sm:text-[clamp(2.25rem,5vw,4rem)]
+              lg:text-[clamp(1.5rem,4vw,5rem)]
+              font-medium
+              leading-[1.1]
+              tracking-tight
+            "
             >
               {hero.name}
             </h1>
