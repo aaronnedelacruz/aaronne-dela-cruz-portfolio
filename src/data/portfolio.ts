@@ -125,7 +125,9 @@ export const projects = {
 
       stack: ["Android Studio", "Java", "Kotlin", "Firebase", "Gemini AI"],
 
-      repository: "https://github.com/yourusername/project",
+      repository: "https://github.com/ShayneGulmayo/StudySync-Flashcard-and-Quiz.git",
+
+      hasDemo: false,
 
       demo: "#",
 
@@ -191,7 +193,9 @@ export const projects = {
         "Visual Studio Code",
       ],
 
-      repository: "https://github.com/yourusername/interntrack",
+      repository: "https://github.com/aaronnedelacruz/interntrack.git",
+
+      hasDemo: false,
 
       demo: "#",
 

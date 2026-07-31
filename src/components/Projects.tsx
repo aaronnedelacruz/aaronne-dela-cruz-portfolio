@@ -28,6 +28,7 @@ interface ProjectItem {
   features: string[];
   stack: string[];
   repository: string;
+  hasDemo: boolean;
   demo: string;
   details: ProjectDetails;
 }
@@ -238,26 +239,30 @@ function Projects() {
                     {projects.labels.repository}
                   </a>
 
-                  <a
-                    href={project.demo}
-                    className="
-                    inline-flex
-                    items-center
-                    gap-1.5
-                    rounded-full
-                    border
-                    border-white/15
-                    px-4
-                    py-2.5
-                    text-sm
-                    font-medium
-                    transition
-                    hover:border-primary/50
-                  "
-                  >
-                    <i className="bi bi-box-arrow-up-right"></i>
-                    {projects.labels.demo}
-                  </a>
+                  {project.hasDemo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="
+                      inline-flex
+                      items-center
+                      gap-1.5
+                      rounded-full
+                      border
+                      border-white/15
+                      px-4
+                      py-2.5
+                      text-sm
+                      font-medium
+                      transition
+                      hover:border-primary/50
+                    "
+                    >
+                      <i className="bi bi-box-arrow-up-right"></i>
+                      {projects.labels.demo}
+                    </a>
+                  )}
 
                   <button
                     type="button"
@@ -473,28 +478,30 @@ function Projects() {
                 {projects.labels.repository}
               </a>
 
-              <a
-                href={activeProject.demo}
-                target="_blank"
-                rel="noreferrer"
-                className="
-                inline-flex
-                items-center
-                gap-1.5
-                rounded-full
-                border
-                border-white/15
-                px-4
-                py-2.5
-                text-sm
-                font-medium
-                transition
-                hover:border-primary/50
-              "
-              >
-                <i className="bi bi-box-arrow-up-right"></i>
-                {projects.labels.demo}
-              </a>
+              {activeProject.hasDemo && (
+                <a
+                  href={activeProject.demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="
+                  inline-flex
+                  items-center
+                  gap-1.5
+                  rounded-full
+                  border
+                  border-white/15
+                  px-4
+                  py-2.5
+                  text-sm
+                  font-medium
+                  transition
+                  hover:border-primary/50
+                "
+                >
+                  <i className="bi bi-box-arrow-up-right"></i>
+                  {projects.labels.demo}
+                </a>
+              )}
             </div>
           </div>
         </div>
