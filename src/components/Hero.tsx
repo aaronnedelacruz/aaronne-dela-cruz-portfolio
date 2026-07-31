@@ -84,7 +84,7 @@ function Hero() {
             bg-right
             bg-no-repeat
 
-            scale-125
+            scale-[1.3]
             sm:scale-[1.20]
             md:scale-[1.12]
             lg:scale-105
