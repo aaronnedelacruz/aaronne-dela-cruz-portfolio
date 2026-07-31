@@ -131,6 +131,10 @@ function Hero() {
             flex-col
             items-start
             gap-[clamp(0.75rem,2vw,1.25rem)]
+            py-14
+            sm:py-16
+            md:py-12
+            lg:py-0
             px-6
             sm:px-8
             md:px-10
