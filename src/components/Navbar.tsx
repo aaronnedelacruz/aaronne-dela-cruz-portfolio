@@ -52,7 +52,6 @@ function Navbar() {
           <a
             className="
               text-white
-              text-sm
               hover:text-primary
               transition
             "
