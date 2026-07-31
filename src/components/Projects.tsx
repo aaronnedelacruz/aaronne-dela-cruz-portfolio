@@ -56,7 +56,7 @@ function Projects() {
 
   return (
     <section id="projects" className="py-20 md:py-24 xl:py-36 bg-background">
-      <div className="w-full max-w-[1800px] mx-auto px-[clamp(1.5rem,6vw,22rem)]">
+      <div className="w-full max-w-[1800px] mx-auto px-[clamp(1.5rem,6vw,22rem)] lg:px-[clamp(5rem,13vw,22rem)]">
         {/* Heading */}
         <span
           className="
@@ -122,7 +122,7 @@ function Projects() {
                 flex-col
               "
             >
-              <div className="p-5 sm:p-6 lg:p-8 flex flex-col flex-1">
+              <div className="p-5 sm:p-6 flex flex-col flex-1">
                 {/* Thumbnail */}
                 <img
                   src={project.thumbnail}
@@ -276,7 +276,6 @@ function Projects() {
                   "
                   >
                     {projects.labels.viewDetails}
-                    <i className="bi bi-arrow-right"></i>
                   </button>
                 </div>
               </div>
