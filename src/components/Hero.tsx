@@ -11,8 +11,7 @@ function Hero() {
       overflow-x-hidden
       overflow-y-hidden
       flex
-      items-start
-      lg:items-center
+      items-center
       justify-center
       bg-cover
       bg-center
@@ -64,9 +63,6 @@ function Hero() {
         max-w-[1800px]
         mx-auto
         px-[clamp(1.5rem,8vw,145px)]
-        pt-0
-        sm:pt-44
-        lg:pt-10
       "
       >
         {/* Banner */}
