@@ -56,7 +56,7 @@ function Projects() {
 
   return (
     <section id="projects" className="py-20 md:py-24 xl:py-36 bg-background">
-      <div className="w-full max-w-[1800px] mx-auto px-[clamp(5rem,13vw,22rem)]">
+      <div className="w-full max-w-[1800px] mx-auto px-[clamp(1.5rem,6vw,22rem)]">
         {/* Heading */}
         <span
           className="
@@ -93,15 +93,7 @@ function Projects() {
         </p>
 
         {/* Project Grid */}
-        <div
-          className="
-            mt-16
-            grid
-            grid-cols-1
-            xl:grid-cols-2
-            gap-8
-          "
-        >
+        <div className="mt-10 sm:mt-12 lg:mt-16 grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-8">
           {projects.items.map((project, index) => (
             <article
               key={index}
@@ -130,7 +122,7 @@ function Projects() {
                 flex-col
               "
             >
-              <div className="p-6 flex flex-col flex-1">
+              <div className="p-5 sm:p-6 lg:p-8 flex flex-col flex-1">
                 {/* Thumbnail */}
                 <img
                   src={project.thumbnail}
