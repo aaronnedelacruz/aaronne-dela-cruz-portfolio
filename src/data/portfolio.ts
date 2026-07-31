@@ -10,7 +10,7 @@ export const hero = {
     banner: heroBanner,
   },
 
-  name: "Aaronne Christian E. Dela Cruz",
+  name: "Aaronne Dela Cruz",
 
   title: "Full Stack Developer",
 
