@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav
       className="
-        sticky
+        fixed
         top-0
         left-0
         w-full
