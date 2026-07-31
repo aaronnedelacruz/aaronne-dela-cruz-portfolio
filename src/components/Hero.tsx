@@ -136,7 +136,7 @@ function Hero() {
             <h1
               className="
                 text-white
-                text-[clamp(1.375rem,3.25vw,3.75rem)]
+                text-[clamp(1.625rem,3.75vw,4.75rem)]
                 font-medium
                 leading-[1.1]
                 tracking-tight
@@ -148,7 +148,7 @@ function Hero() {
             <h2
               className="
                 text-white
-                text-[clamp(1rem,2vw,1.5rem)]
+                text-[clamp(1.125rem,2vw,1.5rem)]
                 font-medium
               "
             >
@@ -158,7 +158,7 @@ function Hero() {
             <p
               className="
                 text-white
-                text-[clamp(0.875rem,1.5vw,1.125rem)]
+                text-[clamp(1rem,1.5vw,1.125rem)]
                 leading-relaxed
                 max-w-xl
               "
@@ -179,7 +179,7 @@ function Hero() {
                 text-black
                 px-[clamp(1rem,2vw,1.5rem)]
                 py-[clamp(0.4rem,0.8vw,0.6rem)]
-                text-[clamp(0.75rem,1vw,0.9rem)]
+                text-[clamp(0.875rem,1vw,0.9rem)]
                 font-semibold
                 transition-all
                 duration-300
