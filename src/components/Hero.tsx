@@ -63,15 +63,21 @@ function Hero() {
         max-w-[1800px]
         mx-auto
         px-[clamp(1.5rem,8vw,145px)]
-        lg:-translate-y-6
-        xl:-translate-y-8
+        lg:translate-y-6
+        xl:translate-y-8
       "
       >
         {/* Banner */}
         <div
           className="
           relative
-          min-h-[390px] sm:min-h-[440px] md:min-h-[480px] lg:min-h-[500px]
+          min-h-[390px]
+          min-h-[60vh]
+          sm:min-h-[440px]
+          sm:min-h-[65vh]
+          md:min-h-[480px]
+          lg:min-h-[500px]
+          xl:min-h-[520px]
           flex
           items-center
           rounded-3xl
