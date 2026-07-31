@@ -15,7 +15,11 @@ function About() {
           w-full
           max-w-[1800px]
           mx-auto
-          px-[clamp(5rem,13vw,22rem)]
+          px-6
+          sm:px-8
+          md:px-12
+          lg:px-20
+          xl:px-[clamp(5rem,13vw,22rem)]
         "
       >
         <div
