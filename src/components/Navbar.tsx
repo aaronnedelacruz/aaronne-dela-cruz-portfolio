@@ -27,15 +27,16 @@ function Navbar() {
         {/* Logo */}
         <div
           className="
-            text-white
-            text-2xl
-            font-bold
-          "
+          text-white
+          text-2xl
+          font-bold
+          min-w-0
+        "
         >
           <img
             src="/horizontal-logo.png"
             alt="Aaronne Dela Cruz Logo"
-            className="h-10 w-auto"
+            className="h-8 sm:h-10 w-auto max-w-full"
           />
         </div>
 
@@ -99,11 +100,12 @@ function Navbar() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="
-            lg:hidden
-            text-white
-            text-xl
-            lg:text-2xl
-          "
+          lg:hidden
+          flex-shrink-0
+          text-white
+          text-xl
+          lg:text-2xl
+        "
         >
           ☰
         </button>
@@ -113,7 +115,7 @@ function Navbar() {
       {menuOpen && (
         <div
           className="
-            md:hidden
+            lg:hidden
             flex
             flex-col
             gap-5
