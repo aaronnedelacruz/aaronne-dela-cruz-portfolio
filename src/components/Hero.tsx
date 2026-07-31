@@ -138,7 +138,7 @@ function Hero() {
             <h1
               className="
                 text-white
-                text-[clamp(1.5rem,3vw,3.5rem)]
+                text-[clamp(1.5rem,4vw,5rem)]
                 font-medium
                 leading-[1.1]
                 tracking-tight
