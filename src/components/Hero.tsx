@@ -24,10 +24,10 @@ function Hero() {
         className="
           absolute
           inset-[-20px]
+          scale-110
           bg-cover
           bg-center
-          blur-lg
-          -z-0
+          blur-xl
         "
         style={{
           backgroundImage: `url(${hero.images.background})`,
