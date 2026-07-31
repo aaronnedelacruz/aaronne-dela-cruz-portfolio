@@ -53,20 +53,22 @@ function Hero() {
       {/* Container */}
       <div
         className="
-          relative
-          z-20
-          w-full
-          max-w-[1800px]
-          mx-auto
-          px-[clamp(1.5rem,8vw,145px)]
-          mt-24
-        "
+        relative
+        z-20
+        w-full
+        max-w-[1800px]
+        mx-auto
+        px-[clamp(1.5rem,8vw,145px)]
+        mt-12
+        sm:mt-16
+        lg:mt-24
+      "
       >
         {/* Banner */}
         <div
           className="
           relative
-          min-h-[clamp(380px,45vw,500px)]
+          min-h-[420px] sm:min-h-[480px] lg:min-h-[500px]
           flex
           items-center
           rounded-3xl
@@ -82,9 +84,9 @@ function Hero() {
               bg-right
               bg-no-repeat
 
-              scale-110
-              sm:scale-125
-              md:scale-115
+              scale-125
+              sm:scale-120
+              md:scale-112
               lg:scale-105
 
               blur-0
@@ -120,18 +122,21 @@ function Hero() {
             flex-col
             items-start
             gap-[clamp(0.75rem,2vw,1.25rem)]
-            px-[clamp(2rem,5vw,5rem)]
-            max-w-[800px]
+            px-6
+            sm:px-8
+            md:px-10
+            lg:px-12
+            xl:px-16
+            max-w-[52rem]
           "
           >
             <h1
               className="
                 text-white
-                text-[clamp(2rem,5vw,3.75rem)]
+                text-[clamp(1.375rem,3.25vw,3.75rem)]
                 font-medium
                 leading-[1.1]
                 tracking-tight
-                whitespace-nowrap
               "
             >
               {hero.name}
@@ -203,7 +208,8 @@ function Hero() {
                   aria-label={social.name}
                   className="
                   text-white
-                  text-[1.9rem]
+                  text-2xl
+                  sm:text-[1.9rem]
                   transition-all
                   duration-300
                   hover:text-primary
