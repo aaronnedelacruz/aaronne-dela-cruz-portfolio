@@ -11,7 +11,8 @@ function Hero() {
       overflow-x-hidden
       overflow-y-hidden
       flex
-      items-center
+      items-start
+      lg:items-center
       justify-center
       bg-cover
       bg-center
@@ -63,7 +64,8 @@ function Hero() {
         max-w-[1800px]
         mx-auto
         px-[clamp(1.5rem,8vw,145px)]
-        pt-24
+        pt-18
+        sm:pt-20
         lg:pt-0
       "
       >
