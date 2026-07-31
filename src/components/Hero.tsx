@@ -63,6 +63,8 @@ function Hero() {
         max-w-[1800px]
         mx-auto
         px-[clamp(1.5rem,8vw,145px)]
+        -translate-y-6
+        lg:-translate-y-8
       "
       >
         {/* Banner */}
