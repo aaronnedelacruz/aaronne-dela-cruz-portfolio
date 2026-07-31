@@ -78,24 +78,26 @@ function Hero() {
           {/* Banner Image ONLY */}
           <div
             className="
-              absolute
-              inset-0
-              bg-cover
-              bg-right
-              bg-no-repeat
+            absolute
+            inset-0
+            bg-cover
+            bg-right
+            bg-no-repeat
 
-              scale-125
-              sm:scale-120
-              md:scale-112
-              lg:scale-105
+            scale-125
+            sm:scale-[1.20]
+            md:scale-[1.12]
+            lg:scale-105
 
-              blur-0
-              max-lg:blur-md
+            blur-0
+            max-lg:blur-md
 
-              transition-all
-              duration-1000
-              ease-in-out
-            "
+            transition-all
+            duration-1000
+            ease-in-out
+
+            will-change-transform
+          "
             style={{
               backgroundImage: `url(${hero.images.banner})`,
             }}
