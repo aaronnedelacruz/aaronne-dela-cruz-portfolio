@@ -179,7 +179,7 @@ function Hero() {
             </p>
 
             {/* Button */}
-            <div>
+            <div className="mt-4 sm:mt-6">
               <a
                 href={hero.button.href}
                 className="
@@ -209,7 +209,6 @@ function Hero() {
               flex
               items-center
               gap-5
-              mt-6
             "
             >
               {socials.map((social) => (
