@@ -64,8 +64,8 @@ function Hero() {
         max-w-[1800px]
         mx-auto
         px-[clamp(1.5rem,8vw,145px)]
-        pt-18
-        sm:pt-20
+        pt-24
+        sm:pt-28
         lg:pt-0
       "
       >
@@ -73,7 +73,7 @@ function Hero() {
         <div
           className="
           relative
-          min-h-[420px] sm:min-h-[480px] lg:min-h-[500px]
+          min-h-[390px] sm:min-h-[440px] md:min-h-[480px] lg:min-h-[500px]
           flex
           items-center
           rounded-3xl
@@ -138,7 +138,7 @@ function Hero() {
             <h1
               className="
                 text-white
-                text-[clamp(1.625rem,3.75vw,4.75rem)]
+                text-[clamp(1.5rem,3vw,3.5rem)]
                 font-medium
                 leading-[1.1]
                 tracking-tight
