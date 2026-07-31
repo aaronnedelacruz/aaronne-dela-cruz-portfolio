@@ -5,7 +5,9 @@ function Education() {
     <section
       id="education"
       className="
-        py-[clamp(5rem,10vw,9rem)]
+        py-20
+        sm:py-24
+        lg:py-32
         bg-background
       "
     >
@@ -14,7 +16,11 @@ function Education() {
           w-full
           max-w-[1800px]
           mx-auto
-          px-[clamp(5rem,13vw,22rem)]
+          px-6
+          sm:px-8
+          md:px-12
+          lg:px-20
+          xl:px-[clamp(5rem,13vw,22rem)]  
         "
       >
         {/* Heading */}
@@ -56,13 +62,16 @@ function Education() {
         {/* Education Card */}
         <div
           className="
-            mt-16
+            mt-10
+            sm:mt-16
             rounded-3xl
             border
             border-white/10
             bg-surface/60
             backdrop-blur-md
-            p-8
+            p-5
+            sm:p-6
+            lg:p-8
             transition
             duration-300
             hover:border-primary/40
@@ -81,7 +90,8 @@ function Education() {
             <div>
               <h3
                 className="
-                  text-2xl
+                  text-xl
+                  sm:text-2xl
                   font-semibold
                   text-white
                 "
@@ -103,17 +113,16 @@ function Education() {
             <span
               className="
                 text-muted
-                whitespace-nowrap
               "
             >
               {education.year}
             </span>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-6 sm:mt-8">
             <p className="text-muted">{education.address}</p>
 
-            <ul className="mt-6 space-y-3">
+            <ul className="mt-5 sm:mt-6 space-y-3">
               {education.achievements.map((achievement, index) => (
                 <li
                   key={index}

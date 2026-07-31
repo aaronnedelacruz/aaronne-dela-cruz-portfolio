@@ -55,7 +55,7 @@ function Projects() {
   }, [activeProject]);
 
   return (
-    <section id="projects" className="py-[clamp(5rem,10vw,9rem)] bg-background">
+    <section id="projects" className="py-20 md:py-24 xl:py-36 bg-background">
       <div className="w-full max-w-[1800px] mx-auto px-[clamp(5rem,13vw,22rem)]">
         {/* Heading */}
         <span

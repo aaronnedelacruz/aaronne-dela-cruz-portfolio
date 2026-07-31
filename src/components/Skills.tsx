@@ -5,7 +5,9 @@ function Skills() {
     <section
       id="skills"
       className="
-        py-[clamp(5rem,10vw,9rem)]
+        py-20
+        sm:py-24
+        lg:py-32
         bg-background
       "
     >
@@ -14,7 +16,11 @@ function Skills() {
           w-full
           max-w-[1800px]
           mx-auto
-          px-[clamp(5rem,13vw,22rem)]
+          px-6
+          sm:px-8
+          md:px-12
+          lg:px-20
+          xl:px-[clamp(5rem,13vw,22rem)]
         "
       >
         {/* Heading */}
@@ -56,11 +62,13 @@ function Skills() {
         {/* Skill Groups */}
         <div
           className="
-            mt-16
+            mt-10
+            sm:mt-16
             grid
             grid-cols-1
             md:grid-cols-2
-            gap-8
+            gap-6
+            sm:gap-8
           "
         >
           {skills.categories.map((category, index) => (
@@ -72,7 +80,9 @@ function Skills() {
                 border-white/10
                 bg-surface/60
                 backdrop-blur-md
-                p-8
+                p-5
+                sm:p-6
+                lg:p-8
                 transition-all
                 duration-300
                 hover:border-primary/40
@@ -81,8 +91,9 @@ function Skills() {
             >
               <h3
                 className="
-                  text-xl
-                  font-semibold
+                  text-lg
+                  sm:text-xl
+                  font-semibold 
                   text-white
                 "
               >
@@ -91,7 +102,8 @@ function Skills() {
 
               <div
                 className="
-                  mt-6
+                  mt-5
+                  sm:mt-6
                   flex
                   flex-wrap
                   gap-3
@@ -105,9 +117,11 @@ function Skills() {
                       border
                       border-primary/25
                       bg-primary/5
-                      px-4
+                      px-3
+                      sm:px-4
                       py-2
-                      text-sm
+                      text-xs
+                      sm:text-sm
                       text-white
                       transition
                       hover:border-primary

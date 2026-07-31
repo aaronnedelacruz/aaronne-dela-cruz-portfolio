@@ -11,7 +11,9 @@ function Contact() {
     <section
       id="contact"
       className="
-        py-[clamp(5rem,10vw,9rem)]
+        py-20
+        sm:py-24
+        lg:py-32
         bg-background
       "
     >
@@ -20,7 +22,11 @@ function Contact() {
           w-full
           max-w-[1800px]
           mx-auto
-          px-[clamp(5rem,13vw,22rem)]
+          px-6
+          sm:px-8
+          md:px-12
+          lg:px-20
+          xl:px-[clamp(5rem,13vw,22rem)]
         "
       >
         {/* Heading */}
@@ -64,11 +70,13 @@ function Contact() {
 
         <div
           className="
-            mt-14
+            mt-10
+            sm:mt-14
             grid
             grid-cols-1
             lg:grid-cols-2
-            gap-8
+            gap-6
+            sm:gap-8
           "
         >
           {/* Left */}
@@ -80,12 +88,16 @@ function Contact() {
               border-white/10
               bg-surface/60
               backdrop-blur-md
-              p-8
+              p-5
+              sm:p-6
+              lg:p-8
             "
           >
-            <h3 className="text-2xl font-semibold text-white">Get in Touch</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold text-white">
+              Get in Touch
+            </h3>
 
-            <div className="mt-8 space-y-8">
+            <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
               {/* Email */}
 
               {email && (
@@ -97,12 +109,14 @@ function Contact() {
                   <a
                     href={email.href}
                     className="
-                      mt-2
-                      inline-block
-                      text-lg
-                      hover:text-primary
-                      transition
-                    "
+                    mt-2
+                    inline-block
+                    break-all
+                    text-base
+                    sm:text-lg
+                    hover:text-primary
+                    transition
+                  "
                   >
                     {email.value}
                   </a>
@@ -143,7 +157,10 @@ function Contact() {
                       border
                       border-primary/30
                       px-5
-                      py-2.5
+                      px-4
+                      sm:px-5
+                      py-2
+                      sm:py-2.5
                       transition
                       hover:bg-primary
                       hover:text-black
@@ -174,7 +191,9 @@ function Contact() {
               border-primary/20
               bg-primary/5
               backdrop-blur-md
-              p-8
+              p-5
+              sm:p-6
+              lg:p-8
               flex
               flex-col
               justify-center
@@ -182,7 +201,8 @@ function Contact() {
           >
             <h3
               className="
-                text-3xl
+                text-2xl
+                sm:text-3xl
                 font-semibold
                 text-white
               "
@@ -206,14 +226,17 @@ function Contact() {
               <a
                 href={email.href}
                 className="
-                  mt-8
+                  mt-6
+                  sm:mt-8
                   w-fit
                   rounded-full
                   bg-primary
                   text-black
                   font-semibold
-                  px-8
-                  py-4
+                  px-6
+                  sm:px-8
+                  py-3
+                  sm:py-4
                   transition
                   hover:scale-105
                 "

@@ -6,7 +6,9 @@ function Experience() {
       id="experience"
       className="
         relative
-        py-[clamp(5rem,10vw,9rem)]
+        py-20
+        md:py-24
+        xl:py-36
         bg-background
       "
     >
