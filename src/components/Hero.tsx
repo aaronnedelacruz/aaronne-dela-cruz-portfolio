@@ -5,15 +5,17 @@ function Hero() {
     <section
       id="home"
       className="
-        relative
-        min-h-screen
-        flex
-        items-center
-        justify-center
-        bg-cover
-        bg-center
-        bg-no-repeat
-        overflow-hidden
+      relative
+      min-h-screen
+      w-full
+      overflow-x-hidden
+      overflow-y-hidden
+      flex
+      items-center
+      justify-center
+      bg-cover
+      bg-center
+      bg-no-repeat
       "
       style={{
         backgroundImage: `url(${hero.images.background})`,
@@ -23,11 +25,13 @@ function Hero() {
       <div
         className="
           absolute
-          inset-[-20px]
-          scale-110
+          -inset-32
+          scale-125
           bg-cover
           bg-center
+          bg-no-repeat
           blur-xl
+          pointer-events-none
         "
         style={{
           backgroundImage: `url(${hero.images.background})`,
@@ -59,9 +63,8 @@ function Hero() {
         max-w-[1800px]
         mx-auto
         px-[clamp(1.5rem,8vw,145px)]
-        mt-12
-        sm:mt-16
-        lg:mt-24
+        pt-24
+        lg:pt-0
       "
       >
         {/* Banner */}
@@ -81,23 +84,21 @@ function Hero() {
             absolute
             inset-0
             bg-cover
-            bg-right
+            bg-[80%_center]
             bg-no-repeat
 
-            scale-[1.3]
-            sm:scale-[1.20]
-            md:scale-[1.12]
+            scale-125
+            sm:scale-115
+            md:scale-110
             lg:scale-105
 
             blur-0
             max-lg:blur-md
 
             transition-all
-            duration-1000
+            duration-700
             ease-in-out
-
-            will-change-transform
-          "
+            "
             style={{
               backgroundImage: `url(${hero.images.banner})`,
             }}
