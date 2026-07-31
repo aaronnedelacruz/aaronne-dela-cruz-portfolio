@@ -15,7 +15,11 @@ function Experience() {
           w-full
           max-w-[1800px]
           mx-auto
-          px-[clamp(5rem,13vw,22rem)]
+          px-6
+          sm:px-8
+          md:px-12
+          lg:px-20
+          xl:px-[clamp(5rem,13vw,22rem)]
         "
       >
         <div
@@ -61,18 +65,28 @@ function Experience() {
 
           <div
             className="
-              mt-14
+              mt-10
+              sm:mt-14
               rounded-3xl
               border
               border-white/10
               bg-surface/60
-              px-[clamp(2rem,3vw,3rem)]
-              py-[clamp(1.25rem,2vw,1.75rem)]
+              px-5
+              sm:px-8
+              lg:px-12
+              py-6
+              sm:py-7
+              lg:py-8
               backdrop-blur-sm
             "
           >
             {experience.items.map((item, index) => (
-              <div key={index}>
+              <div
+                key={index}
+                className={
+                  index !== 0 ? "mt-12 pt-12 border-t border-white/10" : ""
+                }
+              >
                 <div
                   className="
                     flex
@@ -107,10 +121,9 @@ function Experience() {
 
                   <span
                     className="
-                      text-muted
-                      whitespace-nowrap
-                      text-[clamp(0.9rem,1vw,1rem)]
-                    "
+                    text-muted
+                    text-[clamp(0.9rem,1vw,1rem)]
+                  "
                   >
                     {item.duration}
                   </span>
