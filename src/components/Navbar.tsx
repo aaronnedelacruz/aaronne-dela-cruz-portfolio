@@ -76,10 +76,6 @@ function Navbar() {
             Education
           </a>
 
-          <a className="text-white hover:text-primary" href="#contact">
-            Contact
-          </a>
-
           <a
             href="#contact"
             className="
