@@ -273,6 +273,7 @@ export const skills = {
         "Visual Studio Code",
         "XAMPP",
         "Vite",
+        "Node.js",
         "GitHub Pages",
         "Android Studio",
         "IntelliJ IDEA",
