@@ -25,20 +25,23 @@ function Navbar() {
         "
       >
         {/* Logo */}
-        <div
+        <a
+          href="#home"
           className="
-          text-white
-          text-2xl
-          font-bold
-          min-w-0
-        "
+            text-white
+            text-2xl
+            font-bold
+            min-w-0
+            cursor-pointer
+          "
+          aria-label="Go to hero section"
         >
           <img
             src="/horizontal-logo.png"
             alt="Aaronne Dela Cruz Logo"
             className="h-8 sm:h-10 w-auto max-w-full"
           />
-        </div>
+        </a>
 
         {/* Desktop Menu */}
         <div
