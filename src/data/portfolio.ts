@@ -257,23 +257,36 @@ export const skills = {
 
     {
       title: "Backend",
-      items: ["PHP", "Laravel", "Java", "Python", "Kotlin", "Bash Script"],
+      items: [
+        "PHP",
+        "Laravel",
+        "Java",
+        "Python",
+        "C#",
+        "Kotlin",
+      ],
     },
 
     {
-      title: "Database",
-      items: ["MySQL", "SQL", "MongoDB", "Firebase Firestore", "IBM Db2 Cloud"],
+      title: "Databases",
+      items: [
+        "MySQL",
+        "MongoDB",
+        "Firebase Firestore",
+        "IBM Db2 Cloud",
+        "SQL",
+      ],
     },
 
     {
-      title: "Development Tools",
+      title: "Tools & Platforms",
       items: [
         "Git",
         "GitHub",
         "Visual Studio Code",
-        "XAMPP",
         "Vite",
         "Node.js",
+        "XAMPP",
         "GitHub Pages",
         "Android Studio",
         "IntelliJ IDEA",
