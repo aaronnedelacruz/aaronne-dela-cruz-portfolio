@@ -3,6 +3,8 @@ import heroBg from "../assets/hero_bg.png";
 import aboutImg from "../assets/about_img.png";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
+import studySyncVideo from "../assets/StudySync_Preview_Video.mp4";
+
 
 export const hero = {
   images: {
@@ -93,7 +95,7 @@ export const projects = {
     impact: "Impact",
     technologies: "Technologies",
     frontend: "Frontend",
-    backend: "Backend & Services",
+    backend: "Backend",
     database: "Database",
     tools: "Development Tools",
     links: "Links",
@@ -110,6 +112,8 @@ export const projects = {
 
       title: "AI-assisted Flashcard & Quiz App",
 
+      video: studySyncVideo,
+
       category: "Capstone Project • Full-stack Developer • Jan 2025 – Dec 2025",
 
       description:
@@ -123,7 +127,7 @@ export const projects = {
         "Offline access and PDF export for study sets.",
       ],
 
-      stack: ["Android Studio", "Java", "Kotlin", "Firebase", "Gemini AI"],
+      stack: ["Android Studio", "Java", "Kotlin", "XML", "Firebase", "Gemini AI API"],
 
       repository: "https://github.com/ShayneGulmayo/StudySync-Flashcard-and-Quiz.git",
 
@@ -139,7 +143,7 @@ export const projects = {
           "Students often spend more time creating study materials than actually studying, while existing learning platforms rarely combine AI-powered content generation with real-time collaboration.",
 
         solution:
-          "Engineered an AI-assisted mobile application that automates flashcard and quiz creation, synchronizes learning data through Firebase, and integrates collaborative chat rooms to streamline both independent and group study.",
+          "Developed an AI-assisted mobile application that automates flashcard and quiz creation, synchronizes learning data through Firebase, and integrates collaborative chat rooms to streamline both independent and group study.",
 
         impact: [
           "Reduces the time required to prepare study materials.",
@@ -149,15 +153,25 @@ export const projects = {
         ],
 
         tech: {
-          frontend: ["Android Studio", "Java", "Kotlin"],
+          frontend: [
+            "Java", 
+            "Kotlin", 
+            "XML"
+          ],
 
           backend: [
             "Firebase Authentication",
-            "Firebase Realtime Database",
             "Gemini AI API",
           ],
-        },
 
+          database: [
+            "Firebase Realtime Database",
+          ],
+
+          tools: [
+            "Android Studio",
+          ],
+        },
         links: {
           demo: "#",
           repository: "https://github.com/yourusername/project",

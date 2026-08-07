@@ -22,6 +22,7 @@ interface ProjectDetails {
 
 interface ProjectItem {
   thumbnail: string;
+  video?: string;
   title: string;
   category: string;
   description: string;
@@ -344,11 +345,28 @@ function Projects() {
               ×
             </button>
 
-            <img
-              src={activeProject.thumbnail}
-              alt={activeProject.title}
-              className="w-full h-[240px] object-cover rounded-2xl"
-            />
+            {activeProject.video ? (
+              <video
+                key={activeProject.video}
+                src={activeProject.video}
+                poster={activeProject.thumbnail}
+                controls
+                playsInline
+                className="mx-auto block aspect-[16/9] max-h-[70vh] w-full rounded-2xl bg-black"
+              >
+                <img
+                  src={activeProject.thumbnail}
+                  alt={activeProject.title}
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              </video>
+            ) : (
+              <img
+                src={activeProject.thumbnail}
+                alt={activeProject.title}
+                className="w-full h-[240px] object-cover rounded-2xl"
+              />
+            )}
 
             <h3 className="mt-6 text-3xl font-semibold">
               {activeProject.title}
